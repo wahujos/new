@@ -37,7 +37,8 @@ export default {
     },
     methods: {
         getArtists() {
-            const path = "http://localhost:5000/api/music_band";
+            // const path = "http://localhost:5000/api/music_band";
+            const path = "https://new-4.onrender.com/api/music_band";
             axios.get(path)
             .then((res) => {
                 const users = res.data.users;

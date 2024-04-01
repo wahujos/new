@@ -35,7 +35,8 @@ export default {
   },
   methods: {
     getCaterers() {
-      const path = 'http://localhost:5000/api/catering';
+      // const path = 'http://localhost:5000/api/catering';
+      const path = 'https://new-4.onrender.com/api/catering';
       axios.get(path)
         .then((res) => {
           // Assuming res.data is already in JSON format, no need to stringify

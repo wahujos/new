@@ -37,7 +37,8 @@ export default {
     },
     methods: {
         getEmcees() {
-            const path = "http://localhost:5000/api/mc";
+            // const path = "http://localhost:5000/api/mc";
+            const path = "https://new-4.onrender.com/api/mc";
             axios.get(path)
             .then((res) => {
                 const users = res.data.users;
